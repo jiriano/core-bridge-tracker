@@ -1,0 +1,16 @@
+{
+  "name": "core-bridge-tracker",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ jiriano/core-bridge-tracker",
+    "create-local": "graph create --node http://localhost:8020/ jiriano/core-bridge-tracker",
+    "remove-local": "graph remove --node http://localhost:8020/ jiriano/core-bridge-tracker",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 jiriano/core-bridge-tracker"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.1",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
