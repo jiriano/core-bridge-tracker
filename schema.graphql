@@ -1,6 +1,8 @@
-type ExampleEntity @entity {
+type Record @entity {
   id: ID!
-  count: BigInt!
-  previousAdmin: Bytes! # address
-  newAdmin: Bytes! # address
+  swapSequence: BigInt!
+  transferSequence: BigInt!
+  timestamp: BigInt!
+  transactionHash: Bytes!
+  blockNumber: BigInt!
 }
